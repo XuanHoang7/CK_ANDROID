@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:photo_ltdd/screens/main_screens/Search/body.dart';
 
 import 'Body/body.dart';
+import 'Profile/body.dart';
 
 class MainScreens extends StatefulWidget {
   const MainScreens({Key? key}) : super(key: key);
@@ -41,8 +43,8 @@ class _MainScreensState extends State<MainScreens> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
         elevation: 0,
+        backgroundColor: Colors.white,
       ),
       body: PageView(
         physics: const NeverScrollableScrollPhysics(),
@@ -53,10 +55,11 @@ class _MainScreensState extends State<MainScreens> {
           BodySearch(),
           Text("abaa"),
           Text("aabaa"),
-          Text("aaadda")
+          ProfileBody(),
         ],
       ),
       bottomNavigationBar: CupertinoTabBar(
+        height: 65,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
