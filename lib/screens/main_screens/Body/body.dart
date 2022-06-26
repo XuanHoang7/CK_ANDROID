@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_ltdd/screens/main_screens/Body/card.dart';
+import 'package:photo_ltdd/widget/commitbutton.dart';
 
 import 'detail_image.dart';
 
@@ -81,6 +82,19 @@ class Body extends StatelessWidget {
                   ],
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 32,
+            ),
+            const CommitButton(
+              text: 'SEE MORE',
+              height: 52,
+              withd: double.infinity,
+              color: Colors.white,
+              colortext: Colors.black,
+            ),
+            const SizedBox(
+              height: 32,
             ),
           ],
         ),
