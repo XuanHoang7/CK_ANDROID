@@ -17,6 +17,9 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(fit: StackFit.expand, children: [
       SvgPicture.asset('assets/icons/backgroud.svg'),
+      Center(
+        child: Image.asset('assets/images/Group.png'),
+      ),
       Positioned(
         bottom: 0,
         child: Container(
